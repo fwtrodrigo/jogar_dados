@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="faces_dado">
+        <item>@drawable/dado3d</item>
+        <item>@drawable/face1</item>
+        <item>@drawable/face2</item>
+        <item>@drawable/face3</item>
+        <item>@drawable/face4</item>
+        <item>@drawable/face5</item>
+        <item>@drawable/face6</item>
+        <!--        <item>@drawable/dado7</item>-->
+        <!--        <item>@drawable/dado8</item>-->
+    </array>
+</resources>

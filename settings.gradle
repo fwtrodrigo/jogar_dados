@@ -1,0 +1,2 @@
+rootProject.name = "Lanca Dados"
+include ':app'
