@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <array name="faces_dado">
-        <item>@drawable/dado3d</item>
-        <item>@drawable/face1</item>
-        <item>@drawable/face2</item>
-        <item>@drawable/face3</item>
-        <item>@drawable/face4</item>
-        <item>@drawable/face5</item>
-        <item>@drawable/face6</item>
-        <!--        <item>@drawable/dado7</item>-->
-        <!--        <item>@drawable/dado8</item>-->
+    <array name="dado_6_faces">
+        <item>@drawable/dice_1</item>
+        <item>@drawable/dice_2</item>
+        <item>@drawable/dice_3</item>
+        <item>@drawable/dice_4</item>
+        <item>@drawable/dice_5</item>
+        <item>@drawable/dice_6</item>
+    </array>
+
+    <array name="dado_8_faces">
+        <item>@drawable/dice8_1</item>
+        <item>@drawable/dice8_2</item>
+        <item>@drawable/dice8_3</item>
+        <item>@drawable/dice8_4</item>
+        <item>@drawable/dice8_5</item>
+        <item>@drawable/dice8_6</item>
+        <item>@drawable/dice8_7</item>
+        <item>@drawable/dice8_8</item>
     </array>
 </resources>

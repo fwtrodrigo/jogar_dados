@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Lanca Dados</string>
-    <string name="dado_1">dado 1</string>
-    <string name="dado_2">dado 2</string>
-    <string name="jogar">Jogar</string>
+    <string name="dice_1">dado 1</string>
+    <string name="dice_2">dado 2</string>
+    <string name="play">Jogar</string>
+    <string name="erro_tipo_dado">Tipo de dado desconhecido. Esperado 6 ou 8 lados</string>
+    <string name="register">Registrar</string>
+    <string name="name">Nome</string>
+    <string name="welcome">Bem vindo, %s</string>
+    <string name="dice">Dice</string>
+    <string name="share">Share</string>
+    <string name="share_fail">Ops! Parece que algo deu errado. Whatsapp nâo encontrado</string>
 </resources>

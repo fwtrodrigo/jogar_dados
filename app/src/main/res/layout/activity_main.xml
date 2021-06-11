@@ -6,44 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/txtPlayerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="PlayerName" />
 
     <ImageView
-        android:layout_marginVertical="48dp"
-        android:layout_marginHorizontal="16dp"
-        android:id="@+id/imgPrimeiroDado"
+        android:id="@+id/imgFirstDice"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="48dp"
+        android:contentDescription="@string/dice"
         android:scaleType="fitCenter"
-        android:src="@drawable/dado3d"
-        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
-        app:layout_constraintEnd_toStartOf="@+id/imgSegundoDado"
+        android:src="@drawable/dice_6"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
+        app:layout_constraintEnd_toStartOf="@+id/imgSecondDice"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/txtPlayerName" />
 
     <ImageView
-        android:layout_marginVertical="48dp"
-        android:layout_marginHorizontal="16dp"
-        android:id="@+id/imgSegundoDado"
+        android:id="@+id/imgSecondDice"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="48dp"
+        android:contentDescription="@string/dice"
         android:scaleType="fitCenter"
-        android:src="@drawable/dado3d"
-        app:layout_constraintBottom_toTopOf="@+id/btnJogar"
+        android:src="@drawable/dice_6"
+        app:layout_constraintBottom_toTopOf="@+id/btnPlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imgPrimeiroDado"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imgFirstDice"
+        app:layout_constraintTop_toBottomOf="@id/txtPlayerName" />
 
     <Button
-        android:id="@+id/btnJogar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnPlay"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
         android:layout_marginBottom="204dp"
-        android:text="@string/jogar"
+        android:backgroundTint="@color/green_red_color_state"
+        android:text="@string/play"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:clickable="true"
+        android:contentDescription="@string/share"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPlay"
+        app:srcCompat="@drawable/ic_twotone_share_24"
+        tools:layout_editor_absoluteX="200dp"
+        tools:layout_editor_absoluteY="564dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
