@@ -12,11 +12,20 @@
         tools:layout="@layout/fragment_register_user" >
         <action
             android:id="@+id/action_registerUserFragment_to_throwDiceFragment"
-            app:destination="@id/throwDiceFragment" />
+            app:destination="@id/throwDiceFragment">
+            <argument
+                android:name="playerName"
+                android:defaultValue="Player" />
+        </action>
     </fragment>
     <fragment
         android:id="@+id/throwDiceFragment"
         android:name="com.bigodecompany.lancadados.ThrowDiceFragment"
         android:label="fragment_throw_dice"
-        tools:layout="@layout/fragment_throw_dice" />
+        tools:layout="@layout/fragment_throw_dice" >
+        <argument
+            android:name="playerName"
+            app:argType="string"
+            android:defaultValue="Player" />
+    </fragment>
 </navigation>

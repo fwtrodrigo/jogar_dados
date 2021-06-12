@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.bigodecompany.lancadados.databinding.FragmentRegisterUserBinding
 
 class RegisterUserFragment : Fragment() {
@@ -23,9 +25,10 @@ class RegisterUserFragment : Fragment() {
         btnRegister?.setOnClickListener {
             val playerName = edtPlayerName?.text.toString()
 
-//            btnRegister.setOnClickListener {
-//                MainActivity.open(requireContext(), playerName)
-//            }
+            findNavController().navigate(
+                R.id.action_registerUserFragment_to_throwDiceFragment,
+                bundleOf(("playerName" to playerName))
+            )
         }
 
         return binding?.root

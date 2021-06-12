@@ -33,9 +33,6 @@ class ThrowDiceFragment : Fragment(), DiceView {
     private var btnPlay: Button? = null
     private var fabShare: FloatingActionButton? = null
 
-    private var playerName: String = ""
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -48,6 +45,12 @@ class ThrowDiceFragment : Fragment(), DiceView {
         btnPlay = binding?.btnPlay
         fabShare = binding?.fabShare
 
+        var playerName = arguments?.getString("playerName") ?: ""
+        var v = arguments?.getString("playerName")
+
+        if (playerName.isBlank()) {
+            playerName = getString(R.string.unknown_user)
+        }
 
         txtPlayerName?.text = getString(R.string.welcome, playerName)
 
