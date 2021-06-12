@@ -1,11 +1,11 @@
 package com.bigodecompany.lancadados
 
 interface DiceView {
-    fun showFirstDiceSixFaces(numero: Int)
-    fun showSecondDiceSixFaces(numero: Int)
+    fun showFirstDiceSixFaces(diceId: Int)
+    fun showSecondDiceSixFaces(diceId: Int)
 
-    fun showFirstDiceEightFaces(numero: Int)
-    fun showSecondDiceEightFaces(numero: Int)
+    fun showFirstDiceEightFaces(diceId: Int)
+    fun showSecondDiceEightFaces(diceId: Int)
 
     fun showError(message: String)
 }

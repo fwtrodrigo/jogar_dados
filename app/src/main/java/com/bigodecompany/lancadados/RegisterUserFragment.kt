@@ -23,11 +23,10 @@ class RegisterUserFragment : Fragment() {
         btnRegister?.setOnClickListener {
             val playerName = edtPlayerName?.text.toString()
 
-            btnRegister.setOnClickListener {
-                MainActivity.open(requireContext(), playerName)
-            }
+//            btnRegister.setOnClickListener {
+//                MainActivity.open(requireContext(), playerName)
+//            }
         }
-
 
         return binding?.root
     }
