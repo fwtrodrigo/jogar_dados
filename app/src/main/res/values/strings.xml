@@ -10,4 +10,6 @@
     <string name="dice">Dice</string>
     <string name="share">Share</string>
     <string name="share_fail">Ops! Parece que algo deu errado. Whatsapp nâo encontrado</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
