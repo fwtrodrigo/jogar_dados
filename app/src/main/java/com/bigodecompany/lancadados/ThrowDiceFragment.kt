@@ -30,7 +30,8 @@ class ThrowDiceFragment : Fragment(), DiceView {
     private var imgFirstDice: ImageView? = null
     private var imgSecondDice: ImageView? = null
     private var txtPlayerName: TextView? = null
-    private var btnPlay: Button? = null
+    private var btnThrowSixFacesDice: Button? = null
+    private var btnThrowEightFacesDice: Button? = null
     private var fabShare: FloatingActionButton? = null
 
     override fun onCreateView(
@@ -42,7 +43,8 @@ class ThrowDiceFragment : Fragment(), DiceView {
         txtPlayerName = binding?.txtPlayerName
         imgFirstDice = binding?.imgFirstDice
         imgSecondDice = binding?.imgSecondDice
-        btnPlay = binding?.btnPlay
+        btnThrowSixFacesDice = binding?.btnThrowSixFacesDice
+        btnThrowEightFacesDice = binding?.btnThrowEightFacesDice
         fabShare = binding?.fabShare
 
         var playerName = arguments?.getString("playerName") ?: ""
@@ -54,9 +56,14 @@ class ThrowDiceFragment : Fragment(), DiceView {
 
         txtPlayerName?.text = getString(R.string.welcome, playerName)
 
-        btnPlay?.setOnClickListener {
+        btnThrowSixFacesDice?.setOnClickListener {
             val numberOfFaces = 6
-            presenter.jogarDados(numberOfFaces)
+            presenter.throwDices(numberOfFaces)
+        }
+
+        btnThrowEightFacesDice?.setOnClickListener {
+            val numberOfFaces = 8
+            presenter.throwDices(numberOfFaces)
         }
 
         fabShare?.setOnClickListener {

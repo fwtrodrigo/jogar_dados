@@ -19,7 +19,7 @@ class RegisterUserFragment : Fragment() {
 
         binding = FragmentRegisterUserBinding.inflate(inflater, container, false)
 
-        val edtPlayerName = binding?.edtPlayerName
+        val edtPlayerName = binding?.etPlayerName
         val btnRegister = binding?.btnRegister
 
         btnRegister?.setOnClickListener {

@@ -5,7 +5,7 @@ class DicePresenter(private val view: DiceView) {
     private fun obterNumeroAleatorio(quantidadeFaces: Int = 6): Int =
         (0 until quantidadeFaces).random()
 
-    fun jogarDados(quantidadeFaces: Int) {
+    fun throwDices(quantidadeFaces: Int) {
         val dado1 = obterNumeroAleatorio(quantidadeFaces)
         val dado2 = obterNumeroAleatorio(quantidadeFaces)
 
